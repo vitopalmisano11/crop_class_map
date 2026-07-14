@@ -1,0 +1,35 @@
+[project]
+name = "tornatura"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Luca Di Cecilia", email = "luca.dicecilia@leitha.eu" }
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "geopandas>=1.1.1",
+    "matplotlib>=3.10.7",
+    "h3>=4.3.1",
+    "folium>=0.20.0",
+    "mapclassify>=2.10.0",
+    "up42-py>=2.6.0",
+    "rasterio>=1.4.3",
+    "rioxarray>=0.19.0",
+    "scikit-image>=0.25.2",
+    "opencv-python>=4.12.0.88",
+    "streamlit>=1.58.0",
+    "streamlit-folium>=0.27.2",
+    "shapely>=2.1.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+
