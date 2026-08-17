@@ -1,0 +1,13 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Large data (raw downloads + extracted shapefiles) — not tracked,
+# EXCEPT the compact GeoParquet that the deployed app uses
+data/*
+!data/icolt2025_er.parquet
+ARPAE_2008_2025/
+
+# Streamlit
+.streamlit/secrets.toml
